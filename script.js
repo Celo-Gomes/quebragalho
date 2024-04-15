@@ -96,11 +96,11 @@ function copy() {
     alert("Tabela copiada para a área de transferência!");
 }
 
-const button = document.querySelectorAll('input[type="button"]').forEach(press=>{
-    press.addEventListener('mouseup', function() {
-        this.style.transform = 'translateY(0)'
-    })
-})
+// const button = document.querySelectorAll('input[type="button"]').forEach(press=>{
+//     press.addEventListener('mouseup', function() {
+//         this.style.transform = 'translateY(0)'
+//     })
+// })
 
 
 
