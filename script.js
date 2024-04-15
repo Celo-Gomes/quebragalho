@@ -7,6 +7,7 @@ function depure(){
     let text = textI.value
     let textO = document.querySelector("#out")
     document.querySelector('#bCopy').style.opacity ='1'
+    document.querySelector('#bCopy').style.cursor ='pointer'
     
     
     let rows = text.trim().split('\n')
@@ -94,6 +95,13 @@ function copy() {
 
     alert("Tabela copiada para a área de transferência!");
 }
+
+const button = document.querySelectorAll('input[type="button"]').forEach(press=>{
+    press.addEventListener('mouseup', function() {
+        this.style.transform = 'translateY(0)'
+    })
+})
+
 
 
 //função abaixo ilustra uma ação que copiará um simples texto dentro de um elemento

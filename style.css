@@ -15,7 +15,7 @@ div{
     white-space: 600px;
     height: 15rem;
     font-size: 13px;
-    border: 1px solid greenyellow;
+    border: 2px solid greenyellow;
     align-items: center;
     overflow: scroll;
     overflow-x: hidden;
@@ -26,36 +26,36 @@ div{
 #in{
     background-color: #222;
     color: greenyellow;
-    border: 1px greenyellow solid;
+    border: 2px greenyellow solid;
     border-radius: 10px;
     padding: 5px;
+    outline: none;
 }
-#bDepure{
-    margin: 20px;
-    width: 85px;
+#bDepure, #bClear, #bCopy{
+    cursor: pointer;
     background-color: greenyellow;
     font-weight: bold;
     padding: 3px;
     border-radius: 5px;
+}
+#bDepure{
+    margin: 20px;
+    width: 85px;  
 }
 #bClear{
     position: relative;
     width: 85px;
-    left: 50px;
-    background-color: greenyellow;
-    font-weight: bold;
-    padding: 3px;
-    border-radius: 5px;
+    left: 50px;   
 }
 #bCopy{
    margin-left: 25px;
    width: 300px;
-   border-radius: 5px;
-   padding: 3px;
    background-color: orangered;
-   font-weight: bold;
-   opacity: 0;
-   
+   opacity: 0; 
+   cursor: auto;  
+}
+#bDepure:active, #bClear:active, #bCopy:active{
+    transform: translateY(4px);
 }
 ::-webkit-scrollbar{
     width: 10px;
