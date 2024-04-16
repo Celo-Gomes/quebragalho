@@ -18,6 +18,12 @@ function depure(){
         arrays.push(parts)
     })
 
+    textO.innerHTML += `
+        <tr>
+            <th>NOME</th>
+            <th>TELEFONE</th>
+        </tr>
+        `
     let x = 0
     while(arrays.length > x){
         let name = arrays[x][1]
